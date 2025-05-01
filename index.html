@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassordSjekk</title>
+
+</head>
+<body>
+    <div id="app"></div>
+
+    
+    <script>
+
+    // husk parameter bor kun her, den er lokal
+    function writePassword(password) {
+        // vi tar passwordinput og sier den skal være = password
+        // password en skuff vi har laget som brukes kun her
+    passwordInput = password;
+    }
+
+    function passwordBtn() {
+        // her spør vi hvis du skriver i input noe og det er riktig passord
+        //print ut at det er riktig passord
+     if(passwordInput == correctPassword) {
+        console.log('Hallo er du her?');
+    message = "Riktig passord, velkommen inn!";
+    // hvis ikke du inputer riktig pass, blir denne printet ut
+    }else {
+    message = "Feil passord, prøv igjen.";
+    }
+    updateView();
+    }
+    </script>
+    <script src="script/model.js"></script>
+    <script src="script/view.js"></script>
+    <!-- <script src="script/controller.js"></script> -->
+
+
+<!-- **3. Passordsjekk**
+Spør brukeren om å skrive inn et passord.
+- Hvis passordet er "hemmelig123", skriv: "Riktig passord, velkommen inn!"
+- Ellers skriv: "Feil passord, prøv igjen." -->
+
+</body>
+</html>
