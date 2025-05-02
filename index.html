@@ -22,10 +22,12 @@
     function passwordBtn() {
         // her spør vi hvis du skriver i input noe og det er riktig passord
         //print ut at det er riktig passord
-     if(passwordInput == correctPassword) {
+     if(passwordInput == correctPassword1) {
         console.log('Hallo er du her?');
     message = "Riktig passord, velkommen inn!";
     // hvis ikke du inputer riktig pass, blir denne printet ut
+    }else if(passwordInput == correctPassword2) {
+    message = "Riktig passord2, velkommen inn!";
     }else {
     message = "Feil passord, prøv igjen.";
     }
